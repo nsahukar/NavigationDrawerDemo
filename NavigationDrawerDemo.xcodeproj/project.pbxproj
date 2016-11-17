@@ -14,6 +14,9 @@
 		31CAA7481B89B5B200AD7106 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31CAA7471B89B5B200AD7106 /* Images.xcassets */; };
 		31CAA74B1B89B5B200AD7106 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31CAA7491B89B5B200AD7106 /* LaunchScreen.xib */; };
 		31CAA7571B89B5B200AD7106 /* NavigationDrawerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CAA7561B89B5B200AD7106 /* NavigationDrawerDemoTests.m */; };
+		31CAA7621B89B76100AD7106 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CAA7611B89B76100AD7106 /* MenuTableViewController.m */; };
+		31CAA7651B89B94300AD7106 /* NavigationDrawerTransitioner.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CAA7641B89B94300AD7106 /* NavigationDrawerTransitioner.m */; };
+		31CAA7681B89BA9A00AD7106 /* NavigationDrawerPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CAA7671B89BA9A00AD7106 /* NavigationDrawerPresentationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		31CAA7501B89B5B200AD7106 /* NavigationDrawerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationDrawerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31CAA7551B89B5B200AD7106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31CAA7561B89B5B200AD7106 /* NavigationDrawerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationDrawerDemoTests.m; sourceTree = "<group>"; };
+		31CAA7601B89B76100AD7106 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
+		31CAA7611B89B76100AD7106 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
+		31CAA7631B89B94300AD7106 /* NavigationDrawerTransitioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationDrawerTransitioner.h; sourceTree = "<group>"; };
+		31CAA7641B89B94300AD7106 /* NavigationDrawerTransitioner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationDrawerTransitioner.m; sourceTree = "<group>"; };
+		31CAA7661B89BA9A00AD7106 /* NavigationDrawerPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationDrawerPresentationController.h; sourceTree = "<group>"; };
+		31CAA7671B89BA9A00AD7106 /* NavigationDrawerPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationDrawerPresentationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +98,12 @@
 				31CAA7471B89B5B200AD7106 /* Images.xcassets */,
 				31CAA7491B89B5B200AD7106 /* LaunchScreen.xib */,
 				31CAA73A1B89B5B200AD7106 /* Supporting Files */,
+				31CAA7601B89B76100AD7106 /* MenuTableViewController.h */,
+				31CAA7611B89B76100AD7106 /* MenuTableViewController.m */,
+				31CAA7631B89B94300AD7106 /* NavigationDrawerTransitioner.h */,
+				31CAA7641B89B94300AD7106 /* NavigationDrawerTransitioner.m */,
+				31CAA7661B89BA9A00AD7106 /* NavigationDrawerPresentationController.h */,
+				31CAA7671B89BA9A00AD7106 /* NavigationDrawerPresentationController.m */,
 			);
 			path = NavigationDrawerDemo;
 			sourceTree = "<group>";
@@ -163,7 +178,7 @@
 		31CAA72F1B89B5B200AD7106 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Nikhil Sahukar";
 				TargetAttributes = {
 					31CAA7361B89B5B200AD7106 = {
@@ -219,8 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31CAA7681B89BA9A00AD7106 /* NavigationDrawerPresentationController.m in Sources */,
+				31CAA7621B89B76100AD7106 /* MenuTableViewController.m in Sources */,
 				31CAA7431B89B5B200AD7106 /* ViewController.m in Sources */,
 				31CAA7401B89B5B200AD7106 /* AppDelegate.m in Sources */,
+				31CAA7651B89B94300AD7106 /* NavigationDrawerTransitioner.m in Sources */,
 				31CAA73D1B89B5B200AD7106 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +301,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -347,6 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NavigationDrawerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nsahukar.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -357,6 +377,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NavigationDrawerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nsahukar.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -375,6 +396,7 @@
 				);
 				INFOPLIST_FILE = NavigationDrawerDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nsahukar.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NavigationDrawerDemo.app/NavigationDrawerDemo";
 			};
@@ -390,6 +412,7 @@
 				);
 				INFOPLIST_FILE = NavigationDrawerDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nsahukar.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NavigationDrawerDemo.app/NavigationDrawerDemo";
 			};
@@ -414,6 +437,7 @@
 				31CAA75C1B89B5B200AD7106 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31CAA75D1B89B5B200AD7106 /* Build configuration list for PBXNativeTarget "NavigationDrawerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +446,7 @@
 				31CAA75F1B89B5B200AD7106 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

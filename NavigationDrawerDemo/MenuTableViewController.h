@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MenuTableViewController.h
 //  NavigationDrawerDemo
 //
 //  Created by Nikhil Sahukar on 23/08/15.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-@property (nonatomic) id<UIViewControllerTransitioningDelegate> transitioningDelegate;
+@interface MenuTableViewController : UITableViewController
 
 @end
-
